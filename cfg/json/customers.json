@@ -1,0 +1,16 @@
+{
+  "customers": [
+    {
+      "customerId": "1",
+      "fullName": "Torgrim Thorsen",
+      "email": "torgrilt@stud.ntnu.no",
+      "zipCode": "6963",
+      "city": "",
+      "street": "Hatledalsvegen",
+      "houseNumber": "20",
+      "houseLetter": "",
+      "county": "",
+      "municipality": ""
+    }
+  ]
+}

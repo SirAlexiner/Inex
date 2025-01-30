@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.ntnu.idatg1002.grp8.inex.gui.controllers.IncomeController">
+    <children>
+        <VBox prefHeight="565.0" prefWidth="480.0" spacing="10.0">
+            <children>
+                <Label text="Add Income">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Label>
+                <Label text="Date:">
+               <font>
+                  <Font name="Calibri Bold Italic" size="14.0" />
+               </font></Label>
+                <DatePicker fx:id="incomeDate" editable="false" prefHeight="25.0" promptText="Date of Income" />
+                <Label text="Category:">
+               <font>
+                  <Font name="Calibri Bold Italic" size="14.0" />
+               </font></Label>
+                <TextField fx:id="incomeCategory" maxWidth="505.0" prefHeight="25.0" promptText="Sale" />
+                <Label text="Description:">
+               <font>
+                  <Font name="Calibri Bold Italic" size="14.0" />
+               </font></Label>
+                <TextField fx:id="incomeDescription" maxWidth="475.0" prefHeight="25.0" promptText="Income Description" />
+                <Label text="Price:">
+               <font>
+                  <Font name="Calibri Bold Italic" size="14.0" />
+               </font></Label>
+                <TextField fx:id="incomePrice" maxWidth="532.0" prefHeight="25.0" promptText="100 (Nok)" />
+                <HBox alignment="CENTER_RIGHT" prefHeight="14.0" prefWidth="441.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#addIncome" prefHeight="25.0" prefWidth="200.0" text="Add Income">
+                            <graphic>
+                                <FontIcon iconLiteral="fth-credit-card" strokeType="OUTSIDE" strokeWidth="0.0" />
+                            </graphic>
+                            <styleClass>
+                                <String fx:value="button-outlined" />
+                                <String fx:value="accent" />
+                            </styleClass>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets top="10.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+        </VBox>
+        <VBox layoutX="480.0" prefHeight="565.0" prefWidth="480.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="465.0" spacing="10.0">
+                    <ComboBox fx:id="yearComboBox" />
+                    <ComboBox fx:id="monthComboBox" />
+                    <ComboBox fx:id="categoryComboBox" layoutX="155.0" layoutY="10.0" />
+                    <padding>
+                        <Insets bottom="10.0" />
+                    </padding>
+                </HBox>
+                <ListView fx:id="incomeListView" prefHeight="565.0" prefWidth="489.0">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </ListView>
+            </children>
+            <padding>
+                <Insets bottom="15.0" right="15.0" top="15.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

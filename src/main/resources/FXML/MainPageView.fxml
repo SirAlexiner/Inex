@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import atlantafx.base.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.ntnu.idatg1002.grp8.inex.gui.controllers.MainPageController">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="995.0">
+            <children>
+                <HBox prefHeight="25.0" prefWidth="1017.0">
+                    <children>
+                        <MenuButton fx:id="homeBtn" layoutX="10.0" layoutY="10.0" onMouseClicked="#openCompanyPerformanceStage" text="Home">
+                            <graphic>
+                                <FontIcon iconLiteral="fth-home" />
+                            </graphic>
+                            <styleClass>
+                                <String fx:value="flat" />
+                                <String fx:value="accent" />
+                        <String fx:value="no-arrow" />
+                            </styleClass>
+                        </MenuButton>
+                        <MenuButton text="Invoice">
+                            <graphic>
+                                <FontIcon iconLiteral="fth-file" />
+                            </graphic>
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#openInvoiceStage" text="Create Invoice">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fth-file-plus" />
+                                    </graphic>
+                                </MenuItem>
+                                <MenuItem mnemonicParsing="false" onAction="#openFileHandlerStage" text="Browse Generated Invoices">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fth-folder" />
+                                    </graphic>
+                                </MenuItem>
+                            </items>
+                            <styleClass>
+                                <String fx:value="flat" />
+                                <String fx:value="accent" />
+                            </styleClass>
+                        </MenuButton>
+                        <MenuButton text="Finance">
+                            <graphic>
+                                <FontIcon iconLiteral="fth-activity" />
+                            </graphic>
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#openIncomeStage" text="Add/Browse Income">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fth-trending-up" />
+                                    </graphic>
+                                </MenuItem>
+                                <MenuItem mnemonicParsing="false" onAction="#openExpenseStage" text="Add/Browse Expenses">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fth-trending-down" />
+                                    </graphic>
+                                </MenuItem>
+                            </items>
+                            <styleClass>
+                                <String fx:value="flat" />
+                                <String fx:value="accent" />
+                            </styleClass>
+                        </MenuButton>
+                        <MenuButton text="Customers">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#openCustomerRegisterStage" text="Add/Browse Customers">
+                                    <graphic>
+                                        <FontIcon iconLiteral="fth-user-plus" />
+                                    </graphic>
+                                </MenuItem>
+                            </items>
+                            <graphic>
+                                <FontIcon iconLiteral="fth-user" />
+                            </graphic>
+                            <styleClass>
+                                <String fx:value="flat" />
+                                <String fx:value="accent" />
+                            </styleClass>
+                        </MenuButton>
+                    </children>
+                </HBox>
+                <ToggleSwitch contentDisplay="TOP" onMouseClicked="#toggleMode" prefHeight="4.0" prefWidth="111.0" />
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+        </HBox>
+        <StackPane fx:id="root" layoutY="25.0" prefHeight="595.0" prefWidth="995.0">
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+        </StackPane>
+    </children>
+</AnchorPane>

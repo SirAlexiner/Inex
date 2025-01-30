@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="965.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.ntnu.idatg1002.grp8.inex.gui.controllers.FileHandlerController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <ListView fx:id="fileListView" prefHeight="342.0" prefWidth="593.0" VBox.vgrow="ALWAYS" />
+    <Button fx:id="deleteButton" onAction="#handleDeleteFile" prefHeight="20.0" text="Delete File">
+      <graphic>
+         <FontIcon iconLiteral="fth-trash" strokeType="OUTSIDE" strokeWidth="0.0" />
+      </graphic>
+      <styleClass>
+         <String fx:value="danger" />
+         <String fx:value="button-outlined" />
+      </styleClass></Button>
+</VBox>
